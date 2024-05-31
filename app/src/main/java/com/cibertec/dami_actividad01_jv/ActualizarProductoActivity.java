@@ -3,11 +3,11 @@ package com.cibertec.dami_actividad01_jv;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RegistroUsuarioActivity extends AppCompatActivity {
+public class ActualizarProductoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro_usuario);
+        setContentView(R.layout.activity_actualizar_producto);
     }
 }

@@ -4,94 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroUsuarioActivity">
+    tools:context=".ActualizarProductoActivity">
 
     <Button
-        android:id="@+id/btnAceptarRU"
+        android:id="@+id/btnGuardarAP"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="150dp"
         android:background="#3F51B5"
-        android:text="Aceptar"
+        android:text="Guardar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtPassword2RU" />
+        app:layout_constraintTop_toBottomOf="@+id/spnEstadosAP" />
 
     <Button
-        android:id="@+id/btnRegresarRU"
+        android:id="@+id/btnVolverAP"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:background="#3F51B5"
-        android:text="Regresar"
+        android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtPassword2RU" />
+        app:layout_constraintTop_toBottomOf="@+id/spnEstadosAP" />
 
     <EditText
-        android:id="@+id/edTxtPassword1RU"
+        android:id="@+id/edTxtNomProdAP"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Ingresar contraseña"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtUsuarioRU" />
-
-    <EditText
-        android:id="@+id/edTxtPassword2RU"
-        android:layout_width="250sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Volver a ingresar contraseña"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtPassword1RU" />
-
-    <EditText
-        android:id="@+id/edTxtUsuarioRU"
-        android:layout_width="250sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Usuario"
+        android:hint="Nombre de Producto"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgUsuarioPlusRU" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAP" />
 
-    <ImageView
-        android:id="@+id/imgUsuarioPlusRU"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+    <EditText
+        android:id="@+id/edTxtPrecioAP"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloRU"
-        app:srcCompat="@drawable/user_plus_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/spnCategoriasAP" />
+
+    <EditText
+        android:id="@+id/edTxtStockAP"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Stock"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtPrecioAP" />
 
     <TextView
-        android:id="@+id/txtTituloRU"
+        android:id="@+id/txtTituloAP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrarse"
+        android:text="Actualizar Producto"
         android:textColor="#3F51B5"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -100,4 +90,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.042" />
+
+    <Spinner
+        android:id="@+id/spnCategoriasAP"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtNomProdAP" />
+
+    <Spinner
+        android:id="@+id/spnEstadosAP"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtStockAP" />
 </android.support.constraint.ConstraintLayout>
