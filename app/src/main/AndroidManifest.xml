@@ -12,6 +12,9 @@
         android:theme="@style/Theme.DAMI_Actividad01_JV"
         tools:targetApi="31">
         <activity
+            android:name=".MantenimientoProductosActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistroUsuarioActivity"
             android:exported="false" />
         <activity
