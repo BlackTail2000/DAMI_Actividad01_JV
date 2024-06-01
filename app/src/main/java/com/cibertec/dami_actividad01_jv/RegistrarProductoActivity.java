@@ -32,7 +32,7 @@ public class RegistrarProductoActivity extends AppCompatActivity {
         spCategorias.setAdapter(adapter);
     }
 
-    public void guardarProducto(View view) {
+    public void guardar(View view) {
         String nomProd = edTxtNomProd.getText().toString().trim();
         if(!nomProd.equals("")) {
             int categItem = spCategorias.getSelectedItemPosition();
@@ -44,10 +44,7 @@ public class RegistrarProductoActivity extends AppCompatActivity {
                             int stock = Integer.parseInt(edTxtStock.getText().toString());
                             if(stock >= 0) {
                                 Toast.makeText(this, "Producto registrado", Toast.LENGTH_LONG).show();
-                                edTxtNomProd.setText("");
-                                spCategorias.setSelection(0);
-                                edTxtPrecio.setText("");
-                                edTxtStock.setText("");
+                                limpiarFormulario();
                             } else {
                                 Toast.makeText(this, "Ingresar un stock válido", Toast.LENGTH_LONG).show();
                             }
@@ -68,7 +65,14 @@ public class RegistrarProductoActivity extends AppCompatActivity {
         }
     }
 
-    public void toastError(String msj) {
-        Toast.makeText(this, msj, Toast.LENGTH_SHORT).show();
+    public void limpiar(View view) {
+        limpiarFormulario();
+    }
+
+    public void limpiarFormulario() {
+        edTxtNomProd.setText("");
+        spCategorias.setSelection(0);
+        edTxtPrecio.setText("");
+        edTxtStock.setText("");
     }
 }
