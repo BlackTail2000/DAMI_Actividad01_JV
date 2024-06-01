@@ -69,6 +69,10 @@ public class RegistrarProductoActivity extends AppCompatActivity {
         limpiarFormulario();
     }
 
+    public void volver(View view) {
+        finish();
+    }
+
     public void limpiarFormulario() {
         edTxtNomProd.setText("");
         spCategorias.setSelection(0);
