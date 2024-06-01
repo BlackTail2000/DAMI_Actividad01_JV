@@ -63,28 +63,14 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="150dp"
         android:background="#3F51B5"
+        android:onClick="ingresar"
         android:text="Ingresar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtPasswordMain" />
-
-    <Button
-        android:id="@+id/btnRegistrarseMain"
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="20dp"
-        android:background="#3F51B5"
-        android:text="Registrarse"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#FFFFFF"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTxtPasswordMain" />
 
