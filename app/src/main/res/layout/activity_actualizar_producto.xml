@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ActualizarProductoActivity">
 
+    <EditText
+        android:id="@+id/edTxtIdProdAP"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ID Producto"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAP" />
+
+    <Button
+        android:id="@+id/btnBuscarAP"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#3F51B5"
+        android:onClick="buscar"
+        android:text="Buscar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtIdProdAP" />
+
     <Button
         android:id="@+id/btnGuardarAP"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="150dp"
-        android:background="#3F51B5"
+        android:background="#6A6B71"
+        android:enabled="false"
+        android:onClick="guardar"
         android:text="Guardar"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
@@ -29,6 +60,7 @@
         android:layout_marginStart="150dp"
         android:layout_marginTop="20dp"
         android:background="#3F51B5"
+        android:onClick="volver"
         android:text="Volver"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
@@ -48,8 +80,9 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloAP" />
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarAP" />
 
     <EditText
         android:id="@+id/edTxtPrecioAP"
@@ -93,6 +126,7 @@
 
     <Spinner
         android:id="@+id/spnCategoriasAP"
+        style="@android:style/Widget.Material.Spinner.Underlined"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -103,6 +137,7 @@
 
     <Spinner
         android:id="@+id/spnEstadosAP"
+        style="@android:style/Widget.Material.Spinner.Underlined"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
