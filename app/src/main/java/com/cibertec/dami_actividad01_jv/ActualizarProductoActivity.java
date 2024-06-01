@@ -61,6 +61,10 @@ public class ActualizarProductoActivity extends AppCompatActivity {
         }
     }
 
+    public void volver(View view) {
+        finish();
+    }
+
     public void cargarDatosProducto(String nombre, int categItem, double precio, int stock, int estadoItem) {
         edTxtNomProd.setText(nombre);
         spCategorias.setSelection(categItem);
