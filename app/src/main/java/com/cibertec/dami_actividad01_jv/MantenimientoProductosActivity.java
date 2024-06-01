@@ -27,4 +27,8 @@ public class MantenimientoProductosActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ActualizarProductoActivity.class);
         startActivity(intent);
     }
+
+    public void salir(View view) {
+        System.exit(0);
+    }
 }
