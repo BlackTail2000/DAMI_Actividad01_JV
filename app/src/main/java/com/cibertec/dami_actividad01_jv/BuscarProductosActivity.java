@@ -39,11 +39,15 @@ public class BuscarProductosActivity extends AppCompatActivity {
                     Toast.makeText(this, "No se encontró el producto", Toast.LENGTH_LONG).show();
                 }
             } else {
-                Toast.makeText(this, "Ingresar ID de producto", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Ingresar ID de producto válido", Toast.LENGTH_LONG).show();
             }
         } catch (Exception e) {
-            Toast.makeText(this, "Ingresar ID de producto", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Ingresar ID de producto válido", Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void volver(View view) {
+        finish();
     }
 
     public void cargarDatosProducto(String nombre, String categoria, double precio, int stock, String estado) {
