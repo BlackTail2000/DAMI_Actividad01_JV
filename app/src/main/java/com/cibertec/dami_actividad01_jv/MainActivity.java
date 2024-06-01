@@ -27,11 +27,12 @@ public class MainActivity extends AppCompatActivity {
         if(usuario.equals("Admin") && password.equals("admin12345")) {
             Intent intent = new Intent(this, MantenimientoProductosActivity.class);
             startActivity(intent);
+            edTxtUsuario.getText().clear();
+            edTxtPassword.getText().clear();
         } else {
             Toast.makeText(this,
                     "Usuario y/o contraseñas incorrectos",
                     Toast.LENGTH_SHORT).show();
-            edTxtUsuario.requestFocus();
         }
     }
 }

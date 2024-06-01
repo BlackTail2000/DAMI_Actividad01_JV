@@ -17,4 +17,14 @@ public class MantenimientoProductosActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistrarProductoActivity.class);
         startActivity(intent);
     }
+
+    public void irHaciaLayoutBuscarProductos(View view) {
+        Intent intent = new Intent(this, BuscarProductosActivity.class);
+        startActivity(intent);
+    }
+
+    public void irHaciaLayoutActualizarProductos(View view) {
+        Intent intent = new Intent(this, ActualizarProductoActivity.class);
+        startActivity(intent);
+    }
 }
